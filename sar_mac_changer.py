@@ -1,5 +1,25 @@
 import subprocess
 import re
+import time
+
+ascii_code = '''
+ -----------------------------------------@utsr_---------------------------------------
+/  _|      _|  _|      _|  _|      _|  _|_|_|_|_|   _|_|_|_|_|  _|_|_|_|_|  _|_|_|     /
+/  _|      _|  _|_|  _|_|  _|      _|      _|       _|          _|      _|  _|    _|   /
+/  _|      _|  _|  _|  _|  _|      _|      _|       _|_|_|_|_|  _|_|_|_|_|  _|_|_|_|   /
+/  _|      _|  _|      _|  _|      _|      _|               _|  _|      _|  _|  _|     /
+/  _|_|_|_|_|  _|      _|  _|_|_|_|_|      _|       _|_|_|_|_|  _|      _|  _|    _|   /
+/                                                       _|                             /
+ -----------------------------------CREATED BY UMUT SAR-------------------------------
+
+              *************************sar_scanner*************************
+'''
+def show_ascii_art(art):
+    for line in art.splitlines():
+        print(line)
+        time.sleep(0.08)  # Her satır arasında 0.1 saniye bekle
+
+show_ascii_art(ascii_code)
 
 def change_mac(interface, new_mac):
     print(f"Mac address is changing: {interface} -> {new_mac}")
