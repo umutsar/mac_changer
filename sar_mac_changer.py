@@ -17,7 +17,7 @@ ascii_code = '''
 def show_ascii_art(art):
     for line in art.splitlines():
         print(line)
-        time.sleep(0.08)  # Her satır arasında 0.1 saniye bekle
+        time.sleep(0.08)
 
 show_ascii_art(ascii_code)
 
